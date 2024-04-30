@@ -3,6 +3,7 @@
 from flask import Flask, Response, request
 import os, json
 
+os.system("./pwr_enable")
 app = Flask(__name__)
 
 @app.route('/command', methods=["PUT"])

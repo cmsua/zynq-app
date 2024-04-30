@@ -1,0 +1,10 @@
+[Unit]
+Description=Zynq App to control power and services
+After=network.target
+
+[Service]
+WorkingDirectory=/home/daq/zynq-app
+ExecStart=/home/daq/zynq-app/venv/bin/python3 -m flask run -p 8080 -h 0.0.0.0
+
+[Install]
+WantedBy=multi-user.target network.target
