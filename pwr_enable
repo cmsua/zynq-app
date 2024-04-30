@@ -1,0 +1,5 @@
+#!/bin/bash
+for i in 52 53 57; do
+  echo ${i} > /sys/class/gpio/export
+  echo "out" > /sys/class/gpio/gpio${i}/direction
+done

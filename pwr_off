@@ -1,0 +1,4 @@
+#!/bin/bash
+for i in 52 53 57; do
+  echo 0 > /sys/class/gpio/gpio${i}/value
+done

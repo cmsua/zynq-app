@@ -12,6 +12,10 @@ def command():
         return { 'text': run('fw-loader load hexaboard-hd-tester-v2p0-trophy-v3') }
     elif name == "restart_services":
         return { 'i2c': run('service i2c-server restart'), 'daq': run('service daq-server restart') }
+    elif name == "pwr_on":
+        return { 'text': run('./pwr_on') }
+    elif name == "pwr_off":
+        return { 'text': run('./pwr_off') }
     else:
         return { 'error': 'Invalid Command' }
 
