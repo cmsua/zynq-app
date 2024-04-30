@@ -1,6 +1,6 @@
 # `zynq-app`
 
-Tool to control services on a ZYNQ SoC.
+Tool to control services and power on a ZYNQ SoC via an HTTP server.
 
 Reverse-engineered from [hexactrl-script](https://gitlab.cern.ch/hgcal-daq-sw/hexactrl-sw/-/tree/ROCv3/) based on endpoint data.
 
@@ -10,11 +10,11 @@ Install by running the following commands as `daq`:
 
 ```bash
 # Clone repository
-cd ~ && git clone https://github.com/cmsua/zynq-app
+cd ~ && git clone https://github.com/cmsua/zynq-app.git
 cd zynq-app
 
 # Install Service
-sudo cp zyqn-app.service /etc/systemd/system
+sudo cp zynq-app.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable zynq-app
 
