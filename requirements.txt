@@ -1,0 +1,4 @@
+prometheus_client
+flask
+#pylibiio # Unfortunately no readily available libiio for aarch64
+psutil
